@@ -1,51 +1,77 @@
+
+/*Defined constants*/
+
+:root {
+  --ECU_PURPLE: #592A8A;
+  --ECU_GOLD: #FEC923;
+  --ECU_BEIGE: #F5F5DC;
+
+}
+
+
 /* Set the body background to beige */
 body {
-  background-color: #f5f5dc; /* Beige */
+ background-color: var(--ECU_BEIGE); /* Beige */
 }
 
 /* Custom Navbar Styling to replace inline and make changing multiple pages easier*/
 .custom-navbar {
-  background-color: #592A8A; /* ECU Purple navbar */
+ background-color: var(--ECU_PURPLE); /* ECU Purple navbar */
 }
 
- .custom-navbar .navbar-brand,
+.custom-navbar .navbar-brand,
 .custom-navbar .nav-link, 
 .custom-navbar .navbar-text {
-  color: #FEC923 ; /* ECU Gold text on navbar */
+ color: var(--ECU_GOLD) ; /* ECU Gold text on navbar */
 }
 /* 
 .custom-navbar .navbar-toggler-icon {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: center;
+ 
 } */
 
 /* Navbar link hover color*/
 .custom-navbar .nav-link:hover {
-  color: #ffffff; /* white on hover */
+ color: #ffffff; /* white on hover */
 }
 
 /* Spacing for content */
 .home-section {
-  padding-top: 80px; /* Ensures content isn't hidden if navbar is fixed */
+ padding-top: 80px; /* Ensures content isn't hidden if navbar is fixed */
 }
 
+.custom-dropdown .btn-secondary {
+ border: none ;
+ background-color: rgba(0, 0, 0, 0) ; /* Translucent background */
+ color: var(--ECU_GOLD); /* ECU gold text */
+}
+
+.custom-dropdown .dropdown-toggle-split::after {
+ border-top: 0.3em solid var(--ECU_GOLD); /* carrot icon height, line, and color */
+}
 .custom-dropdown .btn.dropdown-toggle {
-  border: none !important;
-  box-shadow: none !important;
-  background-color: rgba(0, 0, 0, 0) !important; /* Translucent background */
-  color: #FEC923 !important; /* ECU gold text */
-  
+ border: none;
+ box-shadow: none;
+ background-color: rgba(0, 0, 0, 0); /* Translucent background */
+ color: var(--ECU_GOLD); /* ECU gold text */
+ 
 }
 
 .custom-dropdown .dropdown-menu {
-  border-color: #592A8A; /* ECU Purple border */
-  box-shadow: none !important;
-  background-color: #f5f5dc; /* Beige */;
-  color: gold !important;
-  
+ border-color: var(--ECU_PURPLE); /* ECU Purple border */
+ box-shadow: none;
+ background-color: var(--ECU_BEIGE); /* Beige */;
+ text-decoration-color: var(--ECU_PURPLE);
+ 
 }
+
+.custom-dropdown .dropdown-item {
+ color: var(--ECU_PURPLE);
+ 
+}
+
 .custom-dropdown .dropdown-divider {
-  border-top: 1px #592A8A; /* ECU Purple border */;
+ border-top: solid var(--ECU_PURPLE)
 }

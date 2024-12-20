@@ -23,7 +23,7 @@
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
         <!-- logo.png is under img folder, it has a transparent background -->
-        <img src="img/logo.png" alt="Peedee the Pedo" title="Peedee the Pedo" class="me-2" style="height: 80px;">
+        <img src="img/logo.png" alt="Peedee the Pirate" title="Peedee the Pirate" class="me-2" style="height: 80px;">
         <span class="navbar-text">ECU ATMAE Robotics</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
@@ -31,7 +31,7 @@
               aria-expanded="true" aria-label="Toggle navigation">
         <!-- Inline background for the toggler icon -->
         <span class="navbar-toggler-icon" 
-         style="border-color:#FEC923" 
+      
 
         >
         <!--  Dont know why the color for the toggle doesnt work, probs skill issue -->
@@ -42,27 +42,23 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
-          <div class="dropdown custom-dropdown">
-            <a class="btn btn-secondary dropdown-toggle" 
-               href="#" 
-               role="button" 
-               data-bs-toggle="dropdown" 
-               aria-expanded="false">
-                Projects Dropdown Test
+          <div class="btn-group custom-dropdown">
+            <a href="projects.html" class="btn btn-secondary">
+              Projects
             </a>
-        
+            
+            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            
             <ul class="dropdown-menu">
-                
-                <li><a class="dropdown-item" href="#">PAPI</a></li>
-                <li><a class="dropdown-item" href="#">Shopping Carrrrght</a></li>
-                <li><hr class="dropdown-divider"></li> 
-                <li><a class="dropdown-item" href="#">Current Project</a></li> 
-                <!-- In the future this will link to current project that will already be in the top list, so that it can be used for comp, let me know if you think it should just have 1 link though -->
+              <li><a class="dropdown-item" href="papi.html">PAPI</a></li>
+              <li><a class="dropdown-item" href="shoppingcarrrrght.html">Shopping Carrrrght</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Current Project</a></li>
             </ul>
-        </div>
+          </div>
         
           <li class="nav-item">
             <a class="nav-link" href="team.html">Team</a>
