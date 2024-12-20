@@ -44,3 +44,7 @@ body {
   background-color: #f5f5dc; /* Beige */;
   color: gold !important;
 }
+
+.custom-dropdown .dropdown-divider {
+  border-top: 1px #592A8A; /* ECU Purple border */;
+}
