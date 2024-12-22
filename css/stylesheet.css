@@ -1,77 +1,45 @@
-
-/*Defined constants*/
-
+/* ====== Colors ====== */
 :root {
-  --ECU_PURPLE: #592A8A;
-  --ECU_GOLD: #FEC923;
-  --ECU_BEIGE: #F5F5DC;
-
+  --ECU_PURPLE: #592a8a;
+  --ECU_GOLD: #fec923;
+  --ECU_GOLD_SELECTED: #b08b1d;
+  --OFF_WHITE: #fdfdfd;
 }
 
-
-/* Set the body background to beige */
+/* ====== Background ====== */
 body {
- background-color: var(--ECU_BEIGE); /* Beige */
+  background-color: var(--OFF_WHITE);
 }
 
-/* Custom Navbar Styling to replace inline and make changing multiple pages easier*/
+/* ====== Navbar ====== */
 .custom-navbar {
- background-color: var(--ECU_PURPLE); /* ECU Purple navbar */
+  background-color: var(--ECU_PURPLE);
+}
+
+/* Hamburger line's color dictated by the stroke RGB */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(254,201,35, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: var(--ECU_GOLD);
+}
+
+.custom-navbar .nav-link,
+.custom-navbar .navbar-text  {
+  font-size: 17px;
 }
 
 .custom-navbar .navbar-brand,
-.custom-navbar .nav-link, 
+.custom-navbar .nav-link,
 .custom-navbar .navbar-text {
- color: var(--ECU_GOLD) ; /* ECU Gold text on navbar */
+  color: var(--ECU_GOLD);
 }
-/* 
-.custom-navbar .navbar-toggler-icon {
- background-size: contain;
- background-repeat: no-repeat;
- background-position: center;
- 
-} */
 
-/* Navbar link hover color*/
+.custom-navbar .nav-link.active {
+  color: var(--ECU_GOLD_SELECTED);
+}
+
 .custom-navbar .nav-link:hover {
- color: #ffffff; /* white on hover */
-}
-
-/* Spacing for content */
-.home-section {
- padding-top: 80px; /* Ensures content isn't hidden if navbar is fixed */
-}
-
-.custom-dropdown .btn-secondary {
- border: none ;
- background-color: rgba(0, 0, 0, 0) ; /* Translucent background */
- color: var(--ECU_GOLD); /* ECU gold text */
-}
-
-.custom-dropdown .dropdown-toggle-split::after {
- border-top: 0.3em solid var(--ECU_GOLD); /* carrot icon height, line, and color */
-}
-.custom-dropdown .btn.dropdown-toggle {
- border: none;
- box-shadow: none;
- background-color: rgba(0, 0, 0, 0); /* Translucent background */
- color: var(--ECU_GOLD); /* ECU gold text */
- 
-}
-
-.custom-dropdown .dropdown-menu {
- border-color: var(--ECU_PURPLE); /* ECU Purple border */
- box-shadow: none;
- background-color: var(--ECU_BEIGE); /* Beige */;
- text-decoration-color: var(--ECU_PURPLE);
- 
-}
-
-.custom-dropdown .dropdown-item {
- color: var(--ECU_PURPLE);
- 
-}
-
-.custom-dropdown .dropdown-divider {
- border-top: solid var(--ECU_PURPLE)
+  color: var(--OFF_WHITE);
 }
