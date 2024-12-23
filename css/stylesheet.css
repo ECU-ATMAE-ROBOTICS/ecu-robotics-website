@@ -3,6 +3,7 @@
   --ECU_PURPLE: #592a8a;
   --ECU_GOLD: #fec923;
   --ECU_GOLD_SELECTED: #b08b1d;
+  --ECU_GOLD_HOVER: #fad669;
   --OFF_WHITE: #fdfdfd;
 }
 
@@ -43,3 +44,27 @@ body {
 .custom-navbar .nav-link:hover {
   color: var(--OFF_WHITE);
 }
+
+/* ====== Projects Tabs ======= */
+.nav-pills {
+  margin-right: 5px;
+  border-right: 2px solid var(--ECU_PURPLE);
+}
+
+.nav-pills .nav-link {
+  border-radius: 10px;
+  margin: 2px;
+  background-color: var(--ECU_GOLD);
+  color: white;
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--ECU_GOLD_SELECTED);
+  color: white;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: var(--ECU_GOLD_HOVER);
+}
+
+
