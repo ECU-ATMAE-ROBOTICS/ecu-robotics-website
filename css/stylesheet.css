@@ -27,7 +27,7 @@ body {
 }
 
 .custom-navbar .nav-link,
-.custom-navbar .navbar-text  {
+.custom-navbar .navbar-text {
   font-size: 17px;
 }
 
@@ -66,5 +66,3 @@ body {
 .nav-pills .nav-link:hover {
   background-color: var(--ECU_GOLD_HOVER);
 }
-
-
