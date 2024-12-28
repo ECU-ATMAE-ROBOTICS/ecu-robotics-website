@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="../css/carousel.css" />
+    <link rel="stylesheet" href="../css/expanding_box.css" />
     <title>ECU Robotics - Home</title>
   </head>
 
@@ -71,56 +71,36 @@
       </div>
     </nav>
 
-    <!-- Carousel Photos -->
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="../static/img/testimage1.png"
-            class="d-block w-100"
-            height="500"
-            alt="Test Image 1"
-            title="Kanye"
-          />
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../static/img/testimage1.png" class="d-block w-100" alt="Test Image 1" title="Kanye">
+            <div class="carousel-caption d-none d-md-block">
+              <ul class="menu">
+                <li class="menu-item">
+                  <div class="box"  >Hover Here for more info</div>
+                  <div class="info">
+                    <img src="../static/img/testimage4.png" class="d-block w-100" alt="Test Image 4" title="College Dropout Bear">
+                  </div>
+              <p>Some subtext to talk about more stuff</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../static/img/testimage2.png" class="d-block w-100" alt="Test Image 2" title="Spanish Bullrun">
+          </div>
+          <div class="carousel-item">
+            <img src="../static/img/testimage3.png" class="d-block w-100" alt="Test Image 3" title="My Uncle and my Goldfish">
+          </div>
         </div>
-        <div class="carousel-item">
-          <img
-            src="../static/img/testimage2.png"
-            class="d-block w-100"
-            height="500"
-            alt="Test Image 2"
-            title="Spanish Bullrun"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="../static/img/testimage3.png"
-            class="d-block w-100"
-            height="500"
-            alt="Test Image 3"
-            title="My Uncle and my Goldfish"
-          />
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
 
     <!-- Bootstrap JS & Poppy.js Bundle) -->
     <script

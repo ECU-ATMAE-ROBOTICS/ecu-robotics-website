@@ -1,0 +1,133 @@
+
+/*Defined constants*/
+
+:root {
+    --ECU_PURPLE: #592A8A;
+    --ECU_GOLD: #FEC923;
+    --ECU_BEIGE: #F5F5DC;
+  
+  }
+  
+  
+  /* Set the body background to beige */
+  body {
+   background-color: var(--ECU_BEIGE); /* Beige */
+  }
+  
+  /* Custom Navbar Styling to replace inline and make changing multiple pages easier*/
+  .custom-navbar {
+   background-color: var(--ECU_PURPLE); /* ECU Purple navbar */
+  }
+  
+  .custom-navbar .navbar-brand,
+  .custom-navbar .nav-link, 
+  .custom-navbar .navbar-text {
+   color: var(--ECU_GOLD) ; /* ECU Gold text on navbar */
+  }
+  /* 
+  .custom-navbar .navbar-toggler-icon {
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   
+  } */
+  
+  /* Navbar link hover color*/
+  .custom-navbar .nav-link:hover {
+   color: #ffffff; /* white on hover */
+  }
+  
+  /* Spacing for content */
+  .home-section {
+   padding-top: 80px; /* Ensures content isn't hidden if navbar is fixed */
+  }
+  
+  .custom-dropdown .btn-secondary {
+   border: none ;
+   background-color: rgba(0, 0, 0, 0) ; /* Translucent background */
+   color: var(--ECU_GOLD); /* ECU gold text */
+  }
+  
+  .custom-dropdown .dropdown-toggle-split::after {
+   border-top: 0.3em solid var(--ECU_GOLD); /* carrot icon height, line, and color */
+  }
+  .custom-dropdown .btn.dropdown-toggle {
+   border: none;
+   box-shadow: none;
+   background-color: rgba(0, 0, 0, 0); /* Translucent background */
+   color: var(--ECU_GOLD); /* ECU gold text */
+   
+  }
+  
+  .custom-dropdown .dropdown-menu {
+   border-color: var(--ECU_PURPLE); /* ECU Purple border */
+   box-shadow: none;
+   background-color: var(--ECU_BEIGE); /* Beige */;
+   text-decoration-color: var(--ECU_PURPLE);
+   
+  }
+  
+  .custom-dropdown .dropdown-item {
+   color: var(--ECU_PURPLE);
+   
+  }
+  
+  .custom-dropdown .dropdown-divider {
+   border-top: solid var(--ECU_PURPLE)
+  }
+  
+  /* Menu container styling */
+  ul.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    border: 1px solid var(--ECU_PURPLE);
+    position: relative;
+    /* Let items expand to the right for when hovered over */
+    /* tried to make it simple, focus on positioning later*/
+    overflow: visible; 
+  }
+  
+  /* Each item in the menu */
+  li.menu-item {
+    position: relative;
+    border-bottom: 1px solid var(--ECU_PURPLE);
+  }
+  
+  /* The visible box part */
+  .box {
+    background: var(--ECU_BEIGE);
+    padding: 15px;
+    transition: transform 0.3s, background 0.3s;
+    cursor: pointer;
+  }
+  
+  /*This is using the hover pseudoclass, will use more later*/
+  .box:hover {
+    background: var(--ECU_BEIGE);
+    transform: scale(1.05);
+  }
+  
+  /* The hidden info panel */
+  .info {
+    position: absolute;
+    top: 0;
+    left: 100%;  /* Positions it immediately to the right of .box */
+    width: 200px;
+    padding: 15px;
+    box-sizing: border-box;
+    background: var(--ECU_BEIGE);
+    border-left: 1px solid var(--ECU_PURPLE);
+    opacity: 0; 
+    transform: translateX(20px);
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none;  /* Prevents hover from interfering when hidden */
+  }
+  
+  /* Reveal the info panel on hover, thats the opacity part  */
+  li.menu-item:hover .info {
+    opacity: 1; /*This is the important bit that reveals things*/
+    transform: translateX(0);
+    pointer-events: auto;
+  }
