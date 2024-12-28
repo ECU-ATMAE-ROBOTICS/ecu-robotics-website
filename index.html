@@ -13,7 +13,7 @@
     <title>ECU Robotics - Home</title>
   </head>
 
-  <body>
+  <body class="index">
     <!-- Navbar -->
     <nav
       class="navbar sticky-top navbar-expand-lg navbar-dark custom-navbar"
@@ -31,20 +31,22 @@
           <span class="navbar-text">ECU ATMAE Robotics</span>
         </a>
 
-        <!-- Toggle Button -->
-        <button
-          class="navbar-toggler custom-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"> </span>
-        </button>
+        <!-- Navbar Toggle Button -->
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+        </div>
 
-        <!-- Collapsible Content -->
+        <!-- Navbar Collapsible Content -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -65,6 +67,39 @@
         </div>
       </div>
     </nav>
+
+    <div class="pills-toggle-background">
+      <!-- Pills Toggle Button -->
+      <div class="d-flex align-items-center pills-toggle-container">
+        <button
+          class="navbar-toggler pills-toggler me-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#pillsSupportedContent"
+          aria-controls="pillsSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <span class="toggle-text">Examples</span>
+
+        <!-- Pills Collapsible Content -->
+        <div class="collapse navbar-collapse" id="pillsSupportedContent">
+          <!-- Example Pills -->
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="examples/carousel.html"
+                >Carousel</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!-- Main Content Section -->
     <section class="home-section">
