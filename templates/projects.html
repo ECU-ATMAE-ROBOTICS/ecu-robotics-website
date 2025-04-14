@@ -1,0 +1,37 @@
+{% extends "base.html" %} {% block content %}
+<!-- Projects Header -->
+<header class="hero-section text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-4 fw-bold mb-4">Our Projects</h1>
+    <p class="lead">Complete portfolio of our robotics initiatives</p>
+  </div>
+</header>
+
+<!-- Main Projects Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      {% for project in projects %}
+      <div class="col-md-8 col-lg-6">
+        <div class="card shadow-sm h-100">
+          <img
+            src="{{ static_path }}/img/{{ project.image }}"
+            class="card-img-top"
+            alt="{{ project.name }}"
+          />
+          <div class="card-body text-center">
+            <h3 class="card-title">{{ project.name }}</h3>
+            <p class="card-text">{{ project.description }}</p>
+            <div class="mt-3">
+              {% for tag in project.tags %}
+              <span class="badge bg-secondary me-2">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

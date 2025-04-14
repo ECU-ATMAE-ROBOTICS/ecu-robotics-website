@@ -1,0 +1,32 @@
+.btn-purple {
+  background-color: var(--ECU_PURPLE);
+  color: white;
+  border-color: var(--ECU_PURPLE);
+}
+
+.btn-purple:hover {
+  background-color: var(--ECU_PURPLE_HOVER);
+  border-color: var(--ECU_PURPLE_HOVER);
+}
+
+.btn-outline-purple {
+  color: var(--ECU_PURPLE);
+  border-color: var(--ECU_PURPLE);
+}
+
+.btn-outline-purple:hover {
+  background-color: var(--ECU_PURPLE);
+  color: white;
+}
+
+.btn-gold {
+  background-color: var(--ECU_GOLD);
+  color: #333;
+  border-color: var(--ECU_GOLD);
+}
+
+.btn-gold:hover {
+  background-color: var(--ECU_GOLD_HOVER);
+  border-color: var(--ECU_GOLD_HOVER);
+  color: #333;
+}

@@ -1,0 +1,115 @@
+{% extends "base.html" %} {% block content %}
+<!-- Contact Header -->
+<header class="hero-section text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-4 fw-bold mb-4">Contact Us</h1>
+    <p class="lead">Get in touch with the ECU ATMAE Robotics Team</p>
+  </div>
+</header>
+
+<!-- Main Contact Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <!-- Contact Form -->
+      <div class="col-lg-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h3 class="card-title text-center mb-4">Send Us a Message</h3>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <select class="form-select" id="subject">
+                  <option value="general">General Inquiry</option>
+                  <option value="join">Joining the Team</option>
+                  <option value="sponsor">Sponsorship</option>
+                  <option value="collab">Collaboration</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-purple">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h3 class="card-title text-center mb-4">Our Information</h3>
+            <div class="contact-info">
+              <div class="d-flex align-items-start mb-4">
+                <div class="me-3 text-purple">
+                  <i class="fas fa-map-marker-alt fa-2x"></i>
+                </div>
+                <div>
+                  <h5>Location</h5>
+                  <p>
+                    Engineering Building<br />
+                    East Carolina University<br />
+                    Greenville, NC 27858
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start mb-4">
+                <div class="me-3 text-purple">
+                  <i class="fas fa-envelope fa-2x"></i>
+                </div>
+                <div>
+                  <h5>Email</h5>
+                  <p>robotics@ecu.edu</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start mb-4">
+                <div class="me-3 text-purple">
+                  <i class="fas fa-users fa-2x"></i>
+                </div>
+                <div>
+                  <h5>Faculty Advisor</h5>
+                  <p>
+                    {{ faculty_advisor.name }}<br />{{ faculty_advisor.email }}
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start">
+                <div class="me-3 text-purple">
+                  <i class="fas fa-calendar-alt fa-2x"></i>
+                </div>
+                <div>
+                  <h5>Meeting Times</h5>
+                  <p>
+                    {{ meeting_times.days }}<br />
+                    {{ meeting_times.time }}<br />
+                    {{ meeting_times.location }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

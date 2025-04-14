@@ -1,0 +1,117 @@
+/* Base */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+:root {
+  --ECU_PURPLE: #592a8a;
+  --ECU_PURPLE_SELECTED: #572e83;
+  --ECU_PURPLE_HOVER: #7339b1;
+  --ECU_GOLD: #fec923;
+  --ECU_GOLD_SELECTED: #fdfdfd;
+  --ECU_GOLD_HOVER: #fad669;
+  --OFF_WHITE: #fdfdfd;
+}
+
+.bg-purple {
+  background-color: var(--ECU_PURPLE);
+}
+
+.text-purple {
+  color: var(--ECU_PURPLE);
+}
+
+/* Components */
+/* ====== Navbar ====== */
+.custom-navbar {
+  background-color: var(--ECU_PURPLE);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(254,201,35, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: var(--ECU_PURPLE);
+}
+
+.custom-navbar .nav-link,
+.custom-navbar .navbar-text {
+  font-size: 17px;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link,
+.custom-navbar .navbar-text {
+  color: var(--ECU_GOLD);
+}
+
+.custom-navbar .nav-link.active {
+  color: var(--ECU_GOLD_SELECTED);
+}
+
+.custom-navbar .nav-link:hover {
+  color: var(--OFF_WHITE);
+}
+
+.btn-purple {
+  background-color: var(--ECU_PURPLE);
+  color: white;
+  border-color: var(--ECU_PURPLE);
+}
+
+.btn-purple:hover {
+  background-color: var(--ECU_PURPLE_HOVER);
+  border-color: var(--ECU_PURPLE_HOVER);
+}
+
+.btn-outline-purple {
+  color: var(--ECU_PURPLE);
+  border-color: var(--ECU_PURPLE);
+}
+
+.btn-outline-purple:hover {
+  background-color: var(--ECU_PURPLE);
+  color: white;
+}
+
+.btn-gold {
+  background-color: var(--ECU_GOLD);
+  color: #333;
+  border-color: var(--ECU_GOLD);
+}
+
+.btn-gold:hover {
+  background-color: var(--ECU_GOLD_HOVER);
+  border-color: var(--ECU_GOLD_HOVER);
+  color: #333;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.hero-section {
+  background: linear-gradient(rgba(89, 42, 138, 0.8), rgba(89, 42, 138, 0.9));
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}

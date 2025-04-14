@@ -1,0 +1,54 @@
+<!-- Navbar -->
+<nav
+  class="navbar sticky-top navbar-expand-lg navbar-dark custom-navbar"
+  aria-label="Primary Navigation"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="{{ home_link }}">
+      <img
+        src="{{ logo_path }}"
+        alt="Robot Peedee the Pirate"
+        title="Robot Peedee the Pirate"
+        class="me-2"
+        style="height: 50px"
+      />
+      <span class="navbar-text">ECU ATMAE Robotics</span>
+    </a>
+    <button
+      class="navbar-toggler custom-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"> </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link {% if active_page == 'home' %}active{% endif %}"
+            href="{{ home_link }}"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link {% if active_page == 'projects' %}active{% endif %}"
+            href="{{ projects_link }}"
+            >Projects</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link {% if active_page == 'contact' %}active{% endif %}"
+            href="{{ contact_link }}"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

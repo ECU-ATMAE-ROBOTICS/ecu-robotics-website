@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact ECU ATMAE Robotics Team - Get in touch with our team members and leadership" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="static/css/stylesheet.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <title>ECU ATMAE Robotics - Contact</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+<nav
+  class="navbar sticky-top navbar-expand-lg navbar-dark custom-navbar"
+  aria-label="Primary Navigation"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img
+        src="static/img/ecu_pirate_robot_logo.png"
+        alt="Robot Peedee the Pirate"
+        title="Robot Peedee the Pirate"
+        class="me-2"
+        style="height: 50px"
+      />
+      <span class="navbar-text">ECU ATMAE Robotics</span>
+    </a>
+    <button
+      class="navbar-toggler custom-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"> </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link "
+            href="index.html"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link "
+            href="projects.html"
+            >Projects</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            href="contact.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- Main Content Wrapper -->
+    <div class="content">
+<!-- Contact Header -->
+<header class="hero-section text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-4 fw-bold mb-4">Contact Us</h1>
+    <p class="lead">Get in touch with the ECU ATMAE Robotics Team</p>
+  </div>
+</header>
+
+<!-- Main Contact Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <!-- Contact Form -->
+      <div class="col-lg-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h3 class="card-title text-center mb-4">Send Us a Message</h3>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <select class="form-select" id="subject">
+                  <option value="general">General Inquiry</option>
+                  <option value="join">Joining the Team</option>
+                  <option value="sponsor">Sponsorship</option>
+                  <option value="collab">Collaboration</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-purple">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h3 class="card-title text-center mb-4">Our Information</h3>
+            <div class="contact-info">
+              <div class="d-flex align-items-start mb-4">
+                <div class="me-3 text-purple">
+                  <i class="fas fa-map-marker-alt fa-2x"></i>
+                </div>
+                <div>
+                  <h5>Location</h5>
+                  <p>
+                    Engineering Building<br />
+                    East Carolina University<br />
+                    Greenville, NC 27858
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start mb-4">
+                <div class="me-3 text-purple">
+                  <i class="fas fa-envelope fa-2x"></i>
+                </div>
+                <div>
+                  <h5>Email</h5>
+                  <p>robotics@ecu.edu</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start mb-4">
+                <div class="me-3 text-purple">
+                  <i class="fas fa-users fa-2x"></i>
+                </div>
+                <div>
+                  <h5>Faculty Advisor</h5>
+                  <p>
+                    Dr. John Smith<br />smithj@ecu.edu
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start">
+                <div class="me-3 text-purple">
+                  <i class="fas fa-calendar-alt fa-2x"></i>
+                </div>
+                <div>
+                  <h5>Meeting Times</h5>
+                  <p>
+                    Tuesdays & Thursdays<br />
+                    5:00 PM - 7:00 PM<br />
+                    Engineering Building Room 205
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+    <!-- Footer -->
+<footer class="footer py-4 bg-dark text-white">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 text-center text-lg-start">
+        <h5>ECU ATMAE Robotics</h5>
+        <p>
+          East Carolina University<br />Department of Engineering<br />Greenville,
+          NC 27858
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 text-center">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white">Home</a></li>
+          <li><a href="projects.html" class="text-white">Projects</a></li>
+          <li><a href="contact.html" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="my-4" />
+    <div class="text-center">
+      <p class="mb-0">
+        &copy; 2025 ECU ATMAE Robotics Team. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

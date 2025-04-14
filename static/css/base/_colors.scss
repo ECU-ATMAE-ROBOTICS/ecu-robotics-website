@@ -1,0 +1,13 @@
+:root {
+    --ECU_PURPLE: #592a8a;
+    --ECU_PURPLE_SELECTED: #572e83;
+    --ECU_PURPLE_HOVER: #7339b1;
+    --ECU_GOLD: #fec923;
+    --ECU_GOLD_SELECTED: #fdfdfd;
+    --ECU_GOLD_HOVER: #fad669;
+    --OFF_WHITE: #fdfdfd;
+  }
+
+  .bg-purple {
+    background-color: var(--ECU_PURPLE);
+}
