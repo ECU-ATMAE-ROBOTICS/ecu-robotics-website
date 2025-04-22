@@ -1,0 +1,6 @@
+static_path: "static"
+css_path: "static/css/stylesheet.css"
+logo_path: "static/img/ecu_pirate_robot_logo.png"
+home_link: "index.html"
+projects_link: "projects.html"
+contact_link: "contact.html"

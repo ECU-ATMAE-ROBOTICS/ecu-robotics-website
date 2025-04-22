@@ -1,0 +1,5 @@
+template: "home.html"
+context:
+  title: "ECU ATMAE Robotics - Home"
+  description: "Official website for ECU ATMAE Robotics Team - Innovating the future of automation and robotics technology"
+  active_page: "home"

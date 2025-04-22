@@ -1,0 +1,12 @@
+template: contact.html
+context:
+  title: "ECU ATMAE Robotics - Contact"
+  description: "Contact ECU ATMAE Robotics Team - Get in touch with our team members and leadership"
+  active_page: "contact"
+  faculty_advisor:
+    name: "Dr. John Smith"
+    email: "smithj@ecu.edu"
+  meeting_times:
+    days: "Tuesdays & Thursdays"
+    time: "5:00 PM - 7:00 PM"
+    location: "Engineering Building Room 205"

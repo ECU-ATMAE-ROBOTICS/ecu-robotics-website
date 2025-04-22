@@ -1,0 +1,5 @@
+template: "projects.html"
+context:
+  title: "ECU ATMAE Robotics - Projects"
+  description: "ECU ATMAE Robotics Projects - Our robotics projects and achievements"
+  active_page: "projects"

@@ -1,0 +1,4 @@
+- name: "ATMAE Robotics Competition"
+  description: "Latin Placeholder Text (lol)"
+  image: "jamie_working.jpg"
+  tags: ["Autonomous", "Computer Vision", "Competition"]
